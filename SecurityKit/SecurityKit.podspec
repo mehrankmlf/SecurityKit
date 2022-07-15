@@ -17,8 +17,9 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/mehrankmlf/SecurityKit.git", :tag => spec.version.to_s }
 
-  spec.source_files  = "SecurityKit/**/*.{swift}"
+  spec.source_files  = "SecurityKit/SecurityKit/**/*.{h,m,swift}"
   spec.swift_version = "5.0"
+  
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
 
