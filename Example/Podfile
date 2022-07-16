@@ -7,7 +7,7 @@ target 'Example' do
 
   # Pods for Example
 
-  pod 'SecurityKit', :path => '../SecurityKit/SecurityKit'
+  pod 'SecurityKit', :path => '../'
 
   target 'ExampleTests' do
     inherit! :search_paths
