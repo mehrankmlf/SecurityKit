@@ -19,7 +19,13 @@ internal class VPNChecker {
         let keys = nsDict["__SCOPED__"] as! NSDictionary
 
         for key: String in keys.allKeys as! [String] {
-            if (key == "tap" || key == "tun" || key == "ppp" || key == "ipsec" || key == "ipsec0" || key == "utun1" || key == "utun2") {
+            if (key == "tap"    ||
+                key == "tun"    ||
+                key == "ppp"    ||
+                key == "ipsec"  ||
+                key == "ipsec0" ||
+                key == "utun1"  ||
+                key == "utun2") {
                 return true
             }
         }
