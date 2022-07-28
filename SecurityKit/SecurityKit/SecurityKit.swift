@@ -137,7 +137,7 @@ public class SecurityKit {
      }
      ```
      */
-    public static func screenShotDetected(completion : @escaping (Bool?) -> (Void)) {
+    public static func screenShotDetected(completion : @escaping (Bool) -> (Void)) {
         ScreenShotDetection.whenScreenShot { value in
             if value {
                 completion(true)
