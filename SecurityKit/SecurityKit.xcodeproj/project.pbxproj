@@ -13,11 +13,10 @@
 		0203EB0328661D9300A2E7A2 /* SecurityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0203EAF528661D9300A2E7A2 /* SecurityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0203EB0D28661F8D00A2E7A2 /* JailBrokenDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203EB0C28661F8D00A2E7A2 /* JailBrokenDetection.swift */; };
 		0219951D286A0F73001830A2 /* BackgroundLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0219951C286A0F73001830A2 /* BackgroundLayer.swift */; };
-		023E1CEC286EC56200061EB4 /* ScreenShotDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023E1CEB286EC56200061EB4 /* ScreenShotDetection.swift */; };
-		023E1CEE286EC5AA00061EB4 /* ScreenRecordingDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023E1CED286EC5AA00061EB4 /* ScreenRecordingDetection.swift */; };
 		023E1CF0286ED94100061EB4 /* SecurityKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023E1CEF286ED94100061EB4 /* SecurityKit.swift */; };
 		0247D85A2868B07200D57EFE /* SimulatorDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0247D8592868B07200D57EFE /* SimulatorDetection.swift */; };
 		0247D85C2868BE4100D57EFE /* ReverseEngineering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0247D85B2868BE4100D57EFE /* ReverseEngineering.swift */; };
+		025683C8289AD7570029BC78 /* ScreenCaptureProtection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025683C7289AD7570029BC78 /* ScreenCaptureProtection.swift */; };
 		02E953CF2868DD35002929FF /* VPNChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E953CE2868DD35002929FF /* VPNChecker.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,11 +38,10 @@
 		0203EB0128661D9300A2E7A2 /* SecurityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityKitTests.swift; sourceTree = "<group>"; };
 		0203EB0C28661F8D00A2E7A2 /* JailBrokenDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailBrokenDetection.swift; sourceTree = "<group>"; };
 		0219951C286A0F73001830A2 /* BackgroundLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundLayer.swift; sourceTree = "<group>"; };
-		023E1CEB286EC56200061EB4 /* ScreenShotDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotDetection.swift; sourceTree = "<group>"; };
-		023E1CED286EC5AA00061EB4 /* ScreenRecordingDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecordingDetection.swift; sourceTree = "<group>"; };
 		023E1CEF286ED94100061EB4 /* SecurityKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityKit.swift; sourceTree = "<group>"; };
 		0247D8592868B07200D57EFE /* SimulatorDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorDetection.swift; sourceTree = "<group>"; };
 		0247D85B2868BE4100D57EFE /* ReverseEngineering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseEngineering.swift; sourceTree = "<group>"; };
+		025683C7289AD7570029BC78 /* ScreenCaptureProtection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCaptureProtection.swift; sourceTree = "<group>"; };
 		02E953CE2868DD35002929FF /* VPNChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNChecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,9 +92,8 @@
 				0247D85B2868BE4100D57EFE /* ReverseEngineering.swift */,
 				02E953CE2868DD35002929FF /* VPNChecker.swift */,
 				0219951C286A0F73001830A2 /* BackgroundLayer.swift */,
-				023E1CEB286EC56200061EB4 /* ScreenShotDetection.swift */,
-				023E1CED286EC5AA00061EB4 /* ScreenRecordingDetection.swift */,
 				023E1CEF286ED94100061EB4 /* SecurityKit.swift */,
+				025683C7289AD7570029BC78 /* ScreenCaptureProtection.swift */,
 			);
 			path = SecurityKit;
 			sourceTree = "<group>";
@@ -218,11 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				023E1CEE286EC5AA00061EB4 /* ScreenRecordingDetection.swift in Sources */,
 				0247D85A2868B07200D57EFE /* SimulatorDetection.swift in Sources */,
-				023E1CEC286EC56200061EB4 /* ScreenShotDetection.swift in Sources */,
 				0219951D286A0F73001830A2 /* BackgroundLayer.swift in Sources */,
 				0203EAF728661D9300A2E7A2 /* SecurityKit.docc in Sources */,
+				025683C8289AD7570029BC78 /* ScreenCaptureProtection.swift in Sources */,
 				02E953CF2868DD35002929FF /* VPNChecker.swift in Sources */,
 				023E1CF0286ED94100061EB4 /* SecurityKit.swift in Sources */,
 				0247D85C2868BE4100D57EFE /* ReverseEngineering.swift in Sources */,

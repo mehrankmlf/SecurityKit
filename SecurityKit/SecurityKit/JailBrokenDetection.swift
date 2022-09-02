@@ -14,14 +14,12 @@ internal class JailBreakDetection {
         let isCydiaInstalled = hasCydiaInstalled()
         let fileCheck = isPathsExist()
         let directories = isDirectoriesWriteable()
-        let filesCanOpen = isSuspiciousFilesCanBeOpened()
-        let directorieWriteable = isRestrictedDirectoriesWriteable()
+        let suspiciousApps = isContainsSuspiciousApps()
         
         return isCydiaInstalled ||
         fileCheck ||
         directories ||
-        filesCanOpen ||
-        directorieWriteable
+        suspiciousApps ? true : false
     }
     
     //check if cydia is installed (using URI Scheme)
@@ -109,48 +107,27 @@ internal class JailBreakDetection {
         return false
     }
     
-    private static var suspiciousFiles : [String] {
-        return [
-            "/.installed_unc0ver",
-            "/.bootstrapped_electra",
-            "/Applications/Cydia.app",
-            "/Library/MobileSubstrate/MobileSubstrate.dylib",
-            "/etc/apt",
-            "/var/log/apt"
+    //suspicious apps path to check
+    private static var suspiciousAppsPathToCheck: [String] {
+        return ["/Applications/Cydia.app",
+                "/Applications/blackra1n.app",
+                "/Applications/FakeCarrier.app",
+                "/Applications/Icy.app",
+                "/Applications/IntelliScreen.app",
+                "/Applications/MxTube.app",
+                "/Applications/RockApp.app",
+                "/Applications/SBSettings.app",
+                "/Applications/WinterBoard.app"
         ]
     }
     
-    private static func isSuspiciousFilesCanBeOpened() -> Bool {
-        for path in suspiciousFiles {
-            
-            if FileManager.default.isReadableFile(atPath: path) {
-                return false
+    //Check if suspicious apps (Cydia, FakeCarrier, Icy etc.) is installed
+    private static func isContainsSuspiciousApps() -> Bool {
+        for path in suspiciousAppsPathToCheck {
+            if FileManager.default.fileExists(atPath: path) {
+                return true
             }
         }
-        return true
-    }
-    
-    
-    private static var restrictedDirectories : [String] {
-        return [
-            "/",
-            "/root/",
-            "/private/",
-            "/jb/"
-        ]
-    }
-    
-    static func isRestrictedDirectoriesWriteable() -> Bool {
-        
-        for path in restrictedDirectories {
-            do {
-                let pathWithSomeRandom = path+UUID().uuidString
-                try "AmIJailbroken?".write(toFile: pathWithSomeRandom, atomically: true, encoding: String.Encoding.utf8)
-                try FileManager.default.removeItem(atPath: pathWithSomeRandom) // clean if succesfully written
-                return false
-            } catch {}
-        }
-        
-        return true
+        return false
     }
 }

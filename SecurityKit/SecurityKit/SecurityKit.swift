@@ -12,7 +12,7 @@ public class SecurityKit {
     
     /**
      Detect when device is JAILBROKEN
-
+     
      - returns: Bool
      - warning: none
      
@@ -31,7 +31,7 @@ public class SecurityKit {
      
      - returns: Bool
      - warning: none
-
+     
      # Example #
      ```
      //
@@ -62,10 +62,10 @@ public class SecurityKit {
     
     /**
      Detect when VPN is Connected in device
-
+     
      - returns: Bool
      - warning: none
-
+     
      # Example #
      ```
      //
@@ -120,45 +120,5 @@ public class SecurityKit {
      */
     public static func removeSecureScreenShot(window:inout UIWindow?) {
         SecureLayer.removeOverlayImage(&window)
-    }
-    
-    
-    /**
-     Detect when device get screenshot
-     
-     - returns: Bool
-     - warning: none
-     
-     # Example #
-     ```
-     //
-     SecurityKit.screenShotDetected { [weak self] data in {
-        
-     }
-     ```
-     */
-    public static func screenShotDetected(completion : @escaping (Bool) -> (Void)) {
-        ScreenShotDetection.whenScreenShot { value in
-            if value {
-                completion(true)
-            }
-        }
-    }
-    
-    
-    /**
-     Detect when device start screen recording
-     
-     - returns: Bool
-     - warning: none
-
-     # Example #
-     ```
-     //
-     let screenRecording = SecurityKit.screenRecordingDetected()
-     ```
-     */
-    public static func screenRecordingDetected() -> Bool {
-        return ScreenRecordingDetection.isScreenRecording()
     }
 }
