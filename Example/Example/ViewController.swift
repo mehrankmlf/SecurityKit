@@ -21,8 +21,9 @@ class ViewController: BaseViewController {
         self.checkReverseEngineering()
         self.checkSimulator()
         self.checkVPNActivate()
-        self.checkScreenRecording()
-        self.checkScreenShotCaptured()
+        
+        ScreenCaptureProtection.shared.delegate = self
+        ScreenCaptureProtection.shared.makeProtection(for: self.view)
     }
     
     private func checkJailBrokenDevice() {
@@ -56,19 +57,14 @@ class ViewController: BaseViewController {
             lblVPNActivate.text = "NO"
         }
     }
-    
-    private func checkScreenRecording() {
-        if SecurityKit.screenRecordingDetected() {
-            super.showAlert(message: "Screen recording Detected")
-        }
-    }
-    
-    private func checkScreenShotCaptured() {
-        SecurityKit.screenShotDetected(completion: { value in
-            if value {
-                super.showAlert(message: "Screen shot Detected")
-            }
-        })
-    }
 }
 
+extension ViewController : ScreenCaptureProtcol {
+    func screenRecording(recordStarted: Bool) {
+        self.showAlert(message: "")
+    }
+    
+    func screenRecording(recordFinished: Bool) {
+        self.showAlert(message: "")
+    }
+}
