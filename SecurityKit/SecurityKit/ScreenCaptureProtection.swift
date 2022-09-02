@@ -51,15 +51,9 @@ private extension UIView {
     }
 }
 
-public protocol ScreenCaptureProtcol : AnyObject {
-    func screenRecording(recordStarted : Bool)
-    func screenRecording(recordFinished : Bool)
-}
-
 public class ScreenCaptureProtection {
     
     public static let shared = ScreenCaptureProtection()
-    public weak var delegate : ScreenCaptureProtcol?
     
     private init() {}
     
@@ -69,14 +63,5 @@ public class ScreenCaptureProtection {
     
     public func removeScreenProtection(`for` view: UIView) {
         view.removeSecureTextField()
-    }
-    
-    public func whenScreenCapturing()  {
-        let isCaptured = UIScreen.main.isCaptured
-        if isCaptured {
-            self.delegate?.screenRecording(recordStarted: true)
-        } else {
-            self.delegate?.screenRecording(recordFinished: true)
-        }
     }
 }
