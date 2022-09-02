@@ -22,7 +22,6 @@ class ViewController: BaseViewController {
         self.checkSimulator()
         self.checkVPNActivate()
         
-        ScreenCaptureProtection.shared.delegate = self
         ScreenCaptureProtection.shared.makeProtection(for: self.view)
     }
     
@@ -56,15 +55,5 @@ class ViewController: BaseViewController {
         }else{
             lblVPNActivate.text = "NO"
         }
-    }
-}
-
-extension ViewController : ScreenCaptureProtcol {
-    func screenRecording(recordStarted: Bool) {
-        self.showAlert(message: "")
-    }
-    
-    func screenRecording(recordFinished: Bool) {
-        self.showAlert(message: "")
     }
 }
