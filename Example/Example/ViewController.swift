@@ -10,6 +10,8 @@ import SecurityKit
 
 class ViewController: BaseViewController {
     
+    let sampleKey = "abcdefgh"
+    
     @IBOutlet weak var lblJailBroken: UILabel!
     @IBOutlet weak var lblReverseEngineering: UILabel!
     @IBOutlet weak var lblDeviceisSimulator: UILabel!
@@ -23,6 +25,8 @@ class ViewController: BaseViewController {
         self.checkVPNActivate()
         
         ScreenCaptureProtection.shared.makeProtection(for: self.view)
+        
+        self.makaStringObfuscate()
     }
     
     private func checkJailBrokenDevice() {
@@ -56,4 +60,18 @@ class ViewController: BaseViewController {
             lblVPNActivate.text = "NO"
         }
     }
+
+    private func makaStringObfuscate() {
+        let plainText = "PlainText"
+        let key = "key"
+        
+        let encrypt = SecurityKit.StringEncryption(plainText: plainText, encryptionKey: key)
+        
+        print(encrypt)
+        
+        let decrypt = SecurityKit.StringDecryption(cypherText: encrypt, decryptionKey: key)
+        
+        print(decrypt)
+    }
 }
+
