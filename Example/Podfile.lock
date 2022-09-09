@@ -1,5 +1,5 @@
 PODS:
-  - SecurityKit (1.0.1)
+  - SecurityKit (1.0.2)
 
 DEPENDENCIES:
   - SecurityKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SecurityKit: c9a101de1b830ce438f5074fbc722c10aa2cc5db
+  SecurityKit: e124c056f32c3bc4a1ad89a5f4208ae5f3ce2a8e
 
 PODFILE CHECKSUM: 1d02dc804be3aff50268d847013a14a3783a604e
 

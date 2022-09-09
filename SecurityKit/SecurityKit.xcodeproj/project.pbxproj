@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		0203EAF728661D9300A2E7A2 /* SecurityKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0203EAF628661D9300A2E7A2 /* SecurityKit.docc */; };
 		0203EAFD28661D9300A2E7A2 /* SecurityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0203EAF228661D9300A2E7A2 /* SecurityKit.framework */; };
-		0203EB0228661D9300A2E7A2 /* SecurityKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203EB0128661D9300A2E7A2 /* SecurityKitTests.swift */; };
 		0203EB0328661D9300A2E7A2 /* SecurityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0203EAF528661D9300A2E7A2 /* SecurityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0203EB0D28661F8D00A2E7A2 /* JailBrokenDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203EB0C28661F8D00A2E7A2 /* JailBrokenDetection.swift */; };
 		0219951D286A0F73001830A2 /* BackgroundLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0219951C286A0F73001830A2 /* BackgroundLayer.swift */; };
 		02341F6F28C7AE94001E05C5 /* StringEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02341F6E28C7AE94001E05C5 /* StringEncryption.swift */; };
+		0234CA7A28CB744800AC66A3 /* StringEncryptionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234CA7928CB744800AC66A3 /* StringEncryptionTest.swift */; };
+		0234CA8128CB8CD500AC66A3 /* TestableStringEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0234CA7E28CB84F800AC66A3 /* TestableStringEncryption.swift */; };
 		023E1CF0286ED94100061EB4 /* SecurityKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023E1CEF286ED94100061EB4 /* SecurityKit.swift */; };
 		0247D85A2868B07200D57EFE /* SimulatorDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0247D8592868B07200D57EFE /* SimulatorDetection.swift */; };
 		0247D85C2868BE4100D57EFE /* ReverseEngineering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0247D85B2868BE4100D57EFE /* ReverseEngineering.swift */; };
@@ -36,10 +37,11 @@
 		0203EAF528661D9300A2E7A2 /* SecurityKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityKit.h; sourceTree = "<group>"; };
 		0203EAF628661D9300A2E7A2 /* SecurityKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SecurityKit.docc; sourceTree = "<group>"; };
 		0203EAFC28661D9300A2E7A2 /* SecurityKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecurityKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0203EB0128661D9300A2E7A2 /* SecurityKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityKitTests.swift; sourceTree = "<group>"; };
 		0203EB0C28661F8D00A2E7A2 /* JailBrokenDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailBrokenDetection.swift; sourceTree = "<group>"; };
 		0219951C286A0F73001830A2 /* BackgroundLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundLayer.swift; sourceTree = "<group>"; };
 		02341F6E28C7AE94001E05C5 /* StringEncryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringEncryption.swift; sourceTree = "<group>"; };
+		0234CA7928CB744800AC66A3 /* StringEncryptionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringEncryptionTest.swift; sourceTree = "<group>"; };
+		0234CA7E28CB84F800AC66A3 /* TestableStringEncryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableStringEncryption.swift; sourceTree = "<group>"; };
 		023E1CEF286ED94100061EB4 /* SecurityKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityKit.swift; sourceTree = "<group>"; };
 		0247D8592868B07200D57EFE /* SimulatorDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorDetection.swift; sourceTree = "<group>"; };
 		0247D85B2868BE4100D57EFE /* ReverseEngineering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseEngineering.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				023E1CEF286ED94100061EB4 /* SecurityKit.swift */,
 				025683C7289AD7570029BC78 /* ScreenCaptureProtection.swift */,
 				02341F6E28C7AE94001E05C5 /* StringEncryption.swift */,
+				0234CA7E28CB84F800AC66A3 /* TestableStringEncryption.swift */,
 			);
 			path = SecurityKit;
 			sourceTree = "<group>";
@@ -104,7 +107,7 @@
 		0203EB0028661D9300A2E7A2 /* SecurityKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				0203EB0128661D9300A2E7A2 /* SecurityKitTests.swift */,
+				0234CA7928CB744800AC66A3 /* StringEncryptionTest.swift */,
 			);
 			path = SecurityKitTests;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				02341F6F28C7AE94001E05C5 /* StringEncryption.swift in Sources */,
 				0203EAF728661D9300A2E7A2 /* SecurityKit.docc in Sources */,
 				025683C8289AD7570029BC78 /* ScreenCaptureProtection.swift in Sources */,
+				0234CA8128CB8CD500AC66A3 /* TestableStringEncryption.swift in Sources */,
 				02E953CF2868DD35002929FF /* VPNChecker.swift in Sources */,
 				023E1CF0286ED94100061EB4 /* SecurityKit.swift in Sources */,
 				0247D85C2868BE4100D57EFE /* ReverseEngineering.swift in Sources */,
@@ -234,7 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0203EB0228661D9300A2E7A2 /* SecurityKitTests.swift in Sources */,
+				0234CA7A28CB744800AC66A3 /* StringEncryptionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

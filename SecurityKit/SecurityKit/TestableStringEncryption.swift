@@ -14,10 +14,10 @@ protocol XOREncryptionProtocol {
 // this class helps to write unit test for encryption process
 internal class TestableStringEncryption: XOREncryptionProtocol {
     func encryption(plainText: String?, encryptionKey: String?) -> [UInt8] {
-        XOREncryption.encryption(plainText: nil, encryptionKey: nil)
+        XOREncryption.encryption(plainText: plainText, encryptionKey: encryptionKey)
     }
     
     func decryption(cypherText: [UInt8]?, decryptionKey: String?) -> String {
-        return XOREncryption.decryption(cypherText: nil, decryptionKey: nil)
+        return XOREncryption.decryption(cypherText: cypherText, decryptionKey: decryptionKey)
     }
 }
