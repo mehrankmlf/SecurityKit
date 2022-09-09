@@ -32,7 +32,7 @@ src="https://travis-ci.org/Techprimate/TPObfuscation.svg?branch=master&style=fla
 
 <p align="center">
 	<b>
-	TPObfuscation is a obfuscation toolbox for Swift!
+	Security Kit is a lightweight framework that helps to achieve a security layer
 	</b>
 </p>
 
