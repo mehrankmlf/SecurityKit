@@ -1,14 +1,13 @@
 //
-//  SecurityKitTests.swift
+//  StringEncryptionTest.swift
 //  SecurityKitTests
 //
-//  Created by Mehran on 4/3/1401 AP.
+//  Created by Mehran on 6/18/1401 AP.
 //
 
 import XCTest
-@testable import SecurityKit
 
-class SecurityKitTests: XCTestCase {
+class StringEncryptionTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

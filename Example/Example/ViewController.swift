@@ -9,9 +9,7 @@ import UIKit
 import SecurityKit
 
 class ViewController: BaseViewController {
-    
-    let sampleKey = "abcdefgh"
-    
+
     @IBOutlet weak var lblJailBroken: UILabel!
     @IBOutlet weak var lblReverseEngineering: UILabel!
     @IBOutlet weak var lblDeviceisSimulator: UILabel!
