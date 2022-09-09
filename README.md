@@ -12,9 +12,6 @@
 	<a href="http://cocoapods.org/pods/TPObfuscation">
 		<img src="https://img.shields.io/cocoapods/l/TPObfuscation.svg?style=flat-square" alt="License"/>
 	</a>
-	<a href="http://cocoapods.org/pods/TPObfuscation">
-		<img src="https://img.shields.io/cocoapods/dt/TPObfuscation.svg?style=flat-square" alt="Downloads"/>
-	</a>
 </p>
 
 <p align="center">
