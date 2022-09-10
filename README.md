@@ -59,7 +59,14 @@ Then, run the following command:
 
 ```bash
 $ pod install
-```		
+```	
+## Installation
+
+### CocoaPods
+
+```ruby
+pod 'SecurityKit'
+```
 		      
 ## Usage
 
