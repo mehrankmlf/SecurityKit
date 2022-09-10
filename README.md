@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://raw.githubusercontent.com/mehrankmlf/SecurityKit/master/Resource/TopImage.png" alt="SecurityKit" width="100" height="100">
+	<img src="https://raw.githubusercontent.com/mehrankmlf/SecurityKit/master/Resource/TopImage.png" alt="SecurityKit" width="256" height="256">
 </p>
 
 ## Security Kit
