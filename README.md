@@ -23,10 +23,12 @@ To run the example project, run `pod try SecurityKit`
 
 ## Features
 
+- [x] JailBroken Device Detection
 - [x] Security Background Layer
 - [x] Detect Reverse Engineering Tools Executed.
 - [x] Check Device is a Simulator or a Real Device.
 - [x] Check VPN is running.
+- [x] Screen Capture Protection.
 - [x] Obfuscate Sensitive String with XOR Data Encryption Algorithm.
 
 ### Requirements
@@ -70,7 +72,7 @@ pod 'SecurityKit'
 		      
 ## Usage
 
-### Security Background Layer
+## JailBroken Device Deteaction
 
 ```swift
 
@@ -80,6 +82,18 @@ if SecurityKit.isDeviceJailBroken() {
          // Do Something
 }else{
         // Do Something
+}
+
+### Check Device is Simulator
+
+```swift
+
+import SecurityKit
+
+if SecurityKit.isDeviceSimulator() {
+      // Do Something
+}else{
+     // Do Something
 }
 
 ```
@@ -98,20 +112,6 @@ if SecurityKit.isRevereseEngineeringToolsExecuted() {
 
 ```
 
-### Check Device is Simulator
-
-```swift
-
-import SecurityKit
-
-if SecurityKit.isDeviceSimulator() {
-      // Do Something
-}else{
-     // Do Something
-}
-
-```
-
 ### Check VPN Runs
 
 ```swift
@@ -123,6 +123,24 @@ if SecurityKit.isVPNConnected() {
 }else{
      // Do Something
 }
+
+```
+
+### Security Background Layer
+
+```swift
+
+import SecurityKit
+
+override func viewDidLoad() {
+   super.viewDidLoad()
+   ScreenCaptureProtection.shared.makeProtection(for: self.view)
+}
+
+override func viewWillAppear(_ animated: Bool) {
+  super.viewWillAppear(false)
+  ScreenCaptureProtection.shared.removeScreenProtection(for: self.view)
+  }
 
 ```
 
