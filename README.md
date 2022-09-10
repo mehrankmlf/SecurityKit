@@ -1,6 +1,6 @@
 # SecurityKit
 <p align="center">
-    <a href="https://github.com/badges/shields/graphs/contributors" alt="Contributors">
+    <a href="https://img.shields.io/badge/coverage-80%25-yellowgreen" alt="Contributors">
         <img src="https://img.shields.io/github/contributors/badges/shields" /></a>
     <a href="#backers" alt="Backers on Open Collective">
         <img src="https://img.shields.io/opencollective/backers/shields" /></a>
@@ -22,9 +22,6 @@
     <a href="https://discord.gg/HjJCwm5">
         <img src="https://img.shields.io/discord/308323056592486420?logo=discord"
             alt="chat on Discord"></a>
-    <a href="https://twitter.com/intent/follow?screen_name=shields_io">
-        <img src="https://img.shields.io/twitter/follow/shields_io?style=social&logo=twitter"
-            alt="follow on Twitter"></a>
 </p>
 
 <p align="center">
