@@ -84,6 +84,8 @@ if SecurityKit.isDeviceJailBroken() {
         // Do Something
 }
 
+```
+
 ### Check Device is Simulator
 
 ```swift
@@ -126,7 +128,7 @@ if SecurityKit.isVPNConnected() {
 
 ```
 
-### Security Background Layer
+### Security Screen Capture
 
 ```swift
 
@@ -141,6 +143,31 @@ override func viewWillAppear(_ animated: Bool) {
   super.viewWillAppear(false)
   ScreenCaptureProtection.shared.removeScreenProtection(for: self.view)
   }
+
+```
+
+### Security Background Layer
+
+```swift
+
+import SecurityKit
+
+var window: UIWindow?
+
+func sceneWillResignActive(_ scene: UIScene) {
+// Called when the scene will move from an active state to an inactive state.
+// This may occur due to temporary interruptions (ex. an incoming phone call).
+
+guard let image = UIImage(named: "Placeholder") else {return}
+SecurityKit.createSecureScreenShot(window: window, image: image)
+}
+    
+func sceneDidBecomeActive(_ scene: UIScene) {
+// Called when the scene has moved from an inactive state to an active state.
+// Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+
+SecurityKit.removeSecureScreenShot(window: &window)
+}
 
 ```
 
