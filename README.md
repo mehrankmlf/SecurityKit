@@ -1,5 +1,5 @@
 
-## Example
+## Security Kit
 
 <p align="center">
 	<b>
