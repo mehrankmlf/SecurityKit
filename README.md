@@ -1,15 +1,6 @@
 # SecurityKit
 
 <p align="center">
-	<a href="https://codebeat.co/projects/github-com-techprimate-tpobfuscation-master">
-		<img src="https://codebeat.co/badges/f56c8eca-c861-4a19-b4e4-84b77540c4ab"" alt="codebeat">
-	</a>
-	<a href="https://bettercodehub.com/results/mehrankmlf/SecurityKit">
-		<img src="https://bettercodehub.com/edge/badge/mehran.kmlf/SecurityKit" alt="bettercodehub">
-	</a>
-</p>
-
-<p align="center">
 	<b>
 	Security Kit is a lightweight framework that helps to achieve a security layer
 	</b>
