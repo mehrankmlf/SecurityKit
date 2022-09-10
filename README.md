@@ -1,5 +1,9 @@
-# SecurityKit
 
+<p align="center">
+	<b>
+	Security Kit
+	</b>
+</p>
 <p align="center">
 	<b>
 	Security Kit is a lightweight framework that helps to achieve a security layer
