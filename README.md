@@ -1,6 +1,5 @@
 # SecurityKit
 
-<p align="center">
 - code coverage percentage: ![coverage](https://img.shields.io/badge/coverage-80%25-yellowgreen)
 - stable release version: ![version](https://img.shields.io/badge/version-1.2.3-blue)
 - package manager release: ![gem](https://img.shields.io/badge/gem-2.2.0-blue)
@@ -11,7 +10,6 @@
 - Python package downloads: ![downloads](https://img.shields.io/badge/downloads-13k%2Fmonth-brightgreen)
 - Chrome Web Store extension rating: ![rating](https://img.shields.io/badge/rating-★★★★☆-brightgreen)
 - [Uptime Robot](https://uptimerobot.com) percentage: ![uptime](https://img.shields.io/badge/uptime-100%25-brightgreen)
-</p>
 
 <p align="center">
 	<a href="https://codebeat.co/projects/github-com-techprimate-tpobfuscation-master">
