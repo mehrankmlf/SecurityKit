@@ -72,9 +72,45 @@ if SecurityKit.isDeviceJailBroken() {
 ```swift
 
 if SecurityKit.isRevereseEngineeringToolsExecuted() {
+       // Do Something
+}else{
+      // Do Something
+}
+
+```
+
+### Check Device is Simulator
+
+```swift
+
+if SecurityKit.isDeviceSimulator() {
       // Do Something
 }else{
      // Do Something
 }
+
+```
+
+### Check VPN Runs
+
+```swift
+
+if SecurityKit.isVPNConnected() {
+     // Do Something
+}else{
+     // Do Something
+}
+
+```
+
+### XOR String obfuscation
+
+```swift
+
+// String Encryption
+let encrypt = SecurityKit.StringEncryption(plainText: "plainText", encryptionKey: "key")
+
+// String Decryption
+let decrypt = SecurityKit.StringDecryption(cypherText: encrypt, decryptionKey: key)
 
 ```
