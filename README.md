@@ -55,16 +55,26 @@ $ pod install
 		      
 ## Usage
 
-### Background Layer
+### Security Background Layer
 
 ```swift
 
-        if SecurityKit.isDeviceJailBroken() {
-            // Do Something
-        }else{
-            // Do Something
-        }
+if SecurityKit.isDeviceJailBroken() {
+         // Do Something
+}else{
+        // Do Something
+}
 
 ```
 
-### Exporting and Loading AES Secret Key
+### Reverse Engineering Tools
+
+```swift
+
+if SecurityKit.isRevereseEngineeringToolsExecuted() {
+      // Do Something
+}else{
+     // Do Something
+}
+
+```
