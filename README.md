@@ -74,6 +74,8 @@ pod 'SecurityKit'
 
 ```swift
 
+import SecurityKit
+
 if SecurityKit.isDeviceJailBroken() {
          // Do Something
 }else{
@@ -85,6 +87,8 @@ if SecurityKit.isDeviceJailBroken() {
 ### Reverse Engineering Tools
 
 ```swift
+
+import SecurityKit
 
 if SecurityKit.isRevereseEngineeringToolsExecuted() {
        // Do Something
@@ -98,6 +102,8 @@ if SecurityKit.isRevereseEngineeringToolsExecuted() {
 
 ```swift
 
+import SecurityKit
+
 if SecurityKit.isDeviceSimulator() {
       // Do Something
 }else{
@@ -110,6 +116,8 @@ if SecurityKit.isDeviceSimulator() {
 
 ```swift
 
+import SecurityKit
+
 if SecurityKit.isVPNConnected() {
      // Do Something
 }else{
@@ -121,6 +129,8 @@ if SecurityKit.isVPNConnected() {
 ### XOR String obfuscation
 
 ```swift
+
+import SecurityKit
 
 // String Encryption
 let encrypt = SecurityKit.StringEncryption(plainText: "plainText", encryptionKey: "key")
