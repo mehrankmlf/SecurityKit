@@ -40,10 +40,6 @@
 
 To run the example project, run `pod try SecurityKit`
 
-## Usage
-
-TODO: Usage description
-
 ## Installation
 
 ### Requirements
@@ -76,5 +72,8 @@ Then, run the following command:
 
 ```bash
 $ pod install
-```		      
+```		
 		      
+## Usage
+
+TODO: Usage description	      
