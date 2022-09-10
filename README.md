@@ -19,7 +19,7 @@
 	</a>
 	<a href="https://bettercodehub.com/results/mehrankmlf/SecurityKit">
 		<img src="https://bettercodehub.com/edge/badge/mehran.kmlf/SecurityKit" alt="bettercodehub">
-	</a>>
+	</a>
 </p>
 
 <p align="center">
