@@ -37,8 +37,6 @@ src="https://travis-ci.org/Techprimate/TPObfuscation.svg?branch=master&style=fla
 </p>
 
 <p align="center">
-    <a href="#features">Features</a>
-  • <a href="#communication">Communication</a>
   • <a href="#usage">Example</a>
   • <a href="#usage">Usage</a>
   • <a href="#installation">Installation</a>
