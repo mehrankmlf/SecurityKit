@@ -55,4 +55,16 @@ $ pod install
 		      
 ## Usage
 
-TODO: Usage description	      
+### Background Layer
+
+```swift
+
+        if SecurityKit.isDeviceJailBroken() {
+            // Do Something
+        }else{
+            // Do Something
+        }
+
+```
+
+### Exporting and Loading AES Secret Key
