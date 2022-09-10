@@ -19,10 +19,7 @@
 	</a>
 	<a href="https://bettercodehub.com/results/mehrankmlf/SecurityKit">
 		<img src="https://bettercodehub.com/edge/badge/mehran.kmlf/SecurityKit" alt="bettercodehub">
-	</a>
-	<a href="https://codecov.io/gh/techprimate/TPObfuscation">
-		<img src="https://img.shields.io/codecov/c/github/techprimate/TPObfuscation.svg?style=flat-square" alt="codecov">
-	</a>
+	</a>>
 </p>
 
 <p align="center">
