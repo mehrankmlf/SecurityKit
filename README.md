@@ -11,7 +11,6 @@
   • <a href="#usage">Example</a>
   • <a href="#usage">Usage</a>
   • <a href="#installation">Installation</a>
-  • <a href="#credits">Credits</a>
   • <a href="#license">License</a>
 </p>
 		            
