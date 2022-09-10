@@ -21,7 +21,13 @@
 
 To run the example project, run `pod try SecurityKit`
 
-## Installation
+## Features
+
+- [x] Security Background Layer
+- [x] Detect Reverse Engineering Tools Executed.
+- [x] Check Device is a Simulator or a Real Device.
+- [x] Check VPN is running.
+- [x] Obfuscate Sensitive String with XOR Data Encryption Algorithm.
 
 ### Requirements
 
