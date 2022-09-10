@@ -43,7 +43,7 @@ To run the example project, run `pod try SecurityKit`
 $ gem install cocoapods
 ```
 
-To integrate TPObfuscation into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate SecurityKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
