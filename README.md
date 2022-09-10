@@ -116,3 +116,6 @@ let encrypt = SecurityKit.StringEncryption(plainText: "plainText", encryptionKey
 let decrypt = SecurityKit.StringDecryption(cypherText: encrypt, decryptionKey: key)
 
 ```
+## License
+
+SecurityKit is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
