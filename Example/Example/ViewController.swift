@@ -36,7 +36,7 @@ class ViewController: BaseViewController {
     }
     
     private func checkReverseEngineering() {
-        if SecurityKit.isRevereseEngineeringToolsExecuted() {
+        if SecurityKit.isReverseEngineeringToolsExecuted() {
             lblReverseEngineering.text = "YES"
         }else{
             lblReverseEngineering.text = "NO"
