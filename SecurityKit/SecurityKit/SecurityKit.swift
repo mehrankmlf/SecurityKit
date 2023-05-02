@@ -52,10 +52,10 @@ public class SecurityKit {
      # Example #
      ```
      //
-     let reverseEngineering = SecurityKit.isRevereseEngineeringToolsExecuted()
+     let reverseEngineering = SecurityKit.isReverseEngineeringToolsExecuted()
      ```
      */
-    public static func isRevereseEngineeringToolsExecuted() -> Bool {
+    public static func isReverseEngineeringToolsExecuted() -> Bool {
         return ReverseEngineering.isReverseEngineeringTools()
     }
     
