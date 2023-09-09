@@ -63,11 +63,11 @@ class ViewController: BaseViewController {
         let plainText = "PlainText"
         let key = "key"
         
-        let encrypt = SecurityKit.StringEncryption(plainText: plainText, encryptionKey: key)
+        let encrypt = SecurityKit.stringEncryption(plainText: plainText, encryptionKey: key)
         
         print(encrypt)
         
-        let decrypt = SecurityKit.StringDecryption(cypherText: encrypt, decryptionKey: key)
+        let decrypt = SecurityKit.stringDecryption(cypherText: encrypt, decryptionKey: key)
         
         print(decrypt)
     }

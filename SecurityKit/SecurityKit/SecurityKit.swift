@@ -136,10 +136,10 @@ public class SecurityKit {
      # Example #
      ```
      //
-     SecurityKit.StringEncryption(plainText : "String", encryptionKey: "String")
+     SecurityKit.stringEncryption(plainText : "String", encryptionKey: "String")
      ```
      */
-    public static func StringEncryption(plainText : String, encryptionKey: String) -> [UInt8] {
+    public static func stringEncryption(plainText : String, encryptionKey: String) -> [UInt8] {
         return XOREncryption.encryption(plainText: plainText, encryptionKey: encryptionKey)
     }
     
@@ -156,10 +156,10 @@ public class SecurityKit {
      # Example #
      ```
      //
-     SecurityKit.StringDecryption(cypherText: [UInt8]?, decryptionKey : "String")
+     SecurityKit.stringDecryption(cypherText: [UInt8]?, decryptionKey : "String")
      ```
      */
-    public static func StringDecryption(cypherText: [UInt8]?, decryptionKey : String?) -> String {
+    public static func stringDecryption(cypherText: [UInt8]?, decryptionKey : String?) -> String {
         return XOREncryption.decryption(cypherText: cypherText, decryptionKey: decryptionKey)
     }
 }
