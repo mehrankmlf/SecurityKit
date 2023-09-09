@@ -178,10 +178,10 @@ SecurityKit.removeSecureScreenShot(window: &window)
 import SecurityKit
 
 // String Encryption
-let encrypt = SecurityKit.StringEncryption(plainText: "plainText", encryptionKey: "key")
+let encrypt = SecurityKit.stringEncryption(plainText: "plainText", encryptionKey: "key")
 
 // String Decryption
-let decrypt = SecurityKit.StringDecryption(cypherText: encrypt, decryptionKey: key)
+let decrypt = SecurityKit.stringDecryption(cypherText: encrypt, decryptionKey: key)
 
 ```
 ## License

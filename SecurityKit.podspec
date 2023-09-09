@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SecurityKit"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "SecurityKit is a security framework for iOS."
   # spec.description  = "SecurityKit is a security framework for iOS."
 
